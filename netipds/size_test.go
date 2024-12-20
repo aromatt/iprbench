@@ -35,7 +35,7 @@ func BenchmarkTier1PfxSize(b *testing.B) {
 func BenchmarkRandomPfx4Size(b *testing.B) {
 	var startMem, endMem runtime.MemStats
 
-	for k := 100; k <= 100_000; k *= 10 {
+	for k := 100; k <= 1_000_000; k *= 10 {
 		tree := new(netipds.PrefixSetBuilder)
 		runtime.GC()
 		runtime.ReadMemStats(&startMem)
@@ -58,7 +58,7 @@ func BenchmarkRandomPfx4Size(b *testing.B) {
 func BenchmarkRandomPfx6Size(b *testing.B) {
 	var startMem, endMem runtime.MemStats
 
-	for k := 100; k <= 100_000; k *= 10 {
+	for k := 100; k <= 1_000_000; k *= 10 {
 		tree := new(netipds.PrefixSetBuilder)
 		runtime.GC()
 		runtime.ReadMemStats(&startMem)
@@ -81,7 +81,7 @@ func BenchmarkRandomPfx6Size(b *testing.B) {
 func BenchmarkRandomPfxSize(b *testing.B) {
 	var startMem, endMem runtime.MemStats
 
-	for k := 100; k <= 100_000; k *= 10 {
+	for k := 100; k <= 1_000_000; k *= 10 {
 		tree := new(netipds.PrefixSetBuilder)
 		runtime.GC()
 		runtime.ReadMemStats(&startMem)
