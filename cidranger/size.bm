@@ -1,13 +1,13 @@
 goos: linux
 goarch: amd64
 pkg: local/iprbench/cidranger
-cpu: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+cpu: AMD EPYC 7R32
 BenchmarkTier1PfxSize/100         	       1	     54368 bytes
-BenchmarkTier1PfxSize/100         	       1	     57376 bytes
-BenchmarkTier1PfxSize/100         	       1	     57376 bytes
-BenchmarkTier1PfxSize/100         	       1	     57376 bytes
-BenchmarkTier1PfxSize/100         	       1	     57376 bytes
-BenchmarkTier1PfxSize/100         	       1	     57376 bytes
+BenchmarkTier1PfxSize/100         	       1	     57344 bytes
+BenchmarkTier1PfxSize/100         	       1	     57344 bytes
+BenchmarkTier1PfxSize/100         	       1	     57344 bytes
+BenchmarkTier1PfxSize/100         	       1	     57344 bytes
+BenchmarkTier1PfxSize/100         	       1	     57344 bytes
 BenchmarkTier1PfxSize/1_000       	       1	    523992 bytes
 BenchmarkTier1PfxSize/1_000       	       1	    538536 bytes
 BenchmarkTier1PfxSize/1_000       	       1	    538536 bytes
@@ -26,101 +26,576 @@ BenchmarkTier1PfxSize/100_000     	       1	  52699816 bytes
 BenchmarkTier1PfxSize/100_000     	       1	  52699816 bytes
 BenchmarkTier1PfxSize/100_000     	       1	  52699816 bytes
 BenchmarkTier1PfxSize/100_000     	       1	  52699816 bytes
-BenchmarkTier1PfxSize/1_000_000   	       1	 488898264 bytes
-BenchmarkTier1PfxSize/1_000_000   	       1	 500641176 bytes
+BenchmarkTier1PfxSize/1_000_000   	       1	 488898248 bytes
+BenchmarkTier1PfxSize/1_000_000   	       1	 500641192 bytes
+BenchmarkTier1PfxSize/1_000_000   	       1	 500641192 bytes
+BenchmarkTier1PfxSize/1_000_000   	       1	 500641192 bytes
 BenchmarkTier1PfxSize/1_000_000   	       1	 500641192 bytes
 BenchmarkTier1PfxSize/1_000_000   	       1	 500641208 bytes
-BenchmarkTier1PfxSize/1_000_000   	       1	 500641192 bytes
-BenchmarkTier1PfxSize/1_000_000   	       1	 500641208 bytes
-BenchmarkRandomPfx4Size/100       	       1	     52176 bytes
-BenchmarkRandomPfx4Size/100       	       1	     55456 bytes
-BenchmarkRandomPfx4Size/100       	       1	     55456 bytes
-BenchmarkRandomPfx4Size/100       	       1	     55456 bytes
-BenchmarkRandomPfx4Size/100       	       1	     55456 bytes
-BenchmarkRandomPfx4Size/100       	       1	     55456 bytes
-BenchmarkRandomPfx4Size/1_000     	       1	    508872 bytes
-BenchmarkRandomPfx4Size/1_000     	       1	    526296 bytes
-BenchmarkRandomPfx4Size/1_000     	       1	    526296 bytes
-BenchmarkRandomPfx4Size/1_000     	       1	    526296 bytes
-BenchmarkRandomPfx4Size/1_000     	       1	    526296 bytes
-BenchmarkRandomPfx4Size/1_000     	       1	    526296 bytes
-BenchmarkRandomPfx4Size/10_000    	       1	   4979688 bytes
-BenchmarkRandomPfx4Size/10_000    	       1	   5138040 bytes
-BenchmarkRandomPfx4Size/10_000    	       1	   5138040 bytes
-BenchmarkRandomPfx4Size/10_000    	       1	   5138040 bytes
-BenchmarkRandomPfx4Size/10_000    	       1	   5138040 bytes
-BenchmarkRandomPfx4Size/10_000    	       1	   5138040 bytes
-BenchmarkRandomPfx4Size/100_000   	       1	  46489000 bytes
-BenchmarkRandomPfx4Size/100_000   	       1	  47979704 bytes
-BenchmarkRandomPfx4Size/100_000   	       1	  47979704 bytes
-BenchmarkRandomPfx4Size/100_000   	       1	  47979704 bytes
-BenchmarkRandomPfx4Size/100_000   	       1	  47979704 bytes
-BenchmarkRandomPfx4Size/100_000   	       1	  47979704 bytes
-BenchmarkRandomPfx4Size/1_000_000 	       1	 402142976 bytes
-BenchmarkRandomPfx4Size/1_000_000 	       1	 415443968 bytes
-BenchmarkRandomPfx4Size/1_000_000 	       1	 415443952 bytes
-BenchmarkRandomPfx4Size/1_000_000 	       1	 415443936 bytes
-BenchmarkRandomPfx4Size/1_000_000 	       1	 415443952 bytes
-BenchmarkRandomPfx4Size/1_000_000 	       1	 415443952 bytes
-BenchmarkRandomPfx6Size/100       	       1	     60864 bytes
+BenchmarkRandomPfx4Size/100       	       1	     52440 bytes
+BenchmarkRandomPfx4Size/100       	       1	     55560 bytes
+BenchmarkRandomPfx4Size/100       	       1	     55568 bytes
+BenchmarkRandomPfx4Size/100       	       1	     55560 bytes
+BenchmarkRandomPfx4Size/100       	       1	     55560 bytes
+BenchmarkRandomPfx4Size/100       	       1	     55560 bytes
+BenchmarkRandomPfx4Size/1_000     	       1	    509576 bytes
+BenchmarkRandomPfx4Size/1_000     	       1	    527016 bytes
+BenchmarkRandomPfx4Size/1_000     	       1	    527016 bytes
+BenchmarkRandomPfx4Size/1_000     	       1	    527016 bytes
+BenchmarkRandomPfx4Size/1_000     	       1	    527016 bytes
+BenchmarkRandomPfx4Size/1_000     	       1	    527016 bytes
+BenchmarkRandomPfx4Size/10_000    	       1	   4984392 bytes
+BenchmarkRandomPfx4Size/10_000    	       1	   5143096 bytes
+BenchmarkRandomPfx4Size/10_000    	       1	   5143096 bytes
+BenchmarkRandomPfx4Size/10_000    	       1	   5143096 bytes
+BenchmarkRandomPfx4Size/10_000    	       1	   5143096 bytes
+BenchmarkRandomPfx4Size/10_000    	       1	   5143096 bytes
+BenchmarkRandomPfx4Size/100_000   	       1	  46483880 bytes
+BenchmarkRandomPfx4Size/100_000   	       1	  47973016 bytes
+BenchmarkRandomPfx4Size/100_000   	       1	  47973016 bytes
+BenchmarkRandomPfx4Size/100_000   	       1	  47973016 bytes
+BenchmarkRandomPfx4Size/100_000   	       1	  47973016 bytes
+BenchmarkRandomPfx4Size/100_000   	       1	  47973016 bytes
+BenchmarkRandomPfx4Size/1_000_000 	       1	 402146616 bytes
+BenchmarkRandomPfx4Size/1_000_000 	       1	 415443768 bytes
+BenchmarkRandomPfx4Size/1_000_000 	       1	 415443784 bytes
+BenchmarkRandomPfx4Size/1_000_000 	       1	 415443768 bytes
+BenchmarkRandomPfx4Size/1_000_000 	       1	 415443784 bytes
+BenchmarkRandomPfx4Size/1_000_000 	       1	 415443752 bytes
+BenchmarkRandomPfx6Size/100       	       1	     60872 bytes
+BenchmarkRandomPfx6Size/100       	       1	     62552 bytes
+BenchmarkRandomPfx6Size/100       	       1	     62552 bytes
+BenchmarkRandomPfx6Size/100       	       1	     62552 bytes
 BenchmarkRandomPfx6Size/100       	       1	     62544 bytes
 BenchmarkRandomPfx6Size/100       	       1	     62544 bytes
-BenchmarkRandomPfx6Size/100       	       1	     62544 bytes
-BenchmarkRandomPfx6Size/100       	       1	     62544 bytes
-BenchmarkRandomPfx6Size/100       	       1	     62544 bytes
-BenchmarkRandomPfx6Size/1_000     	       1	    591512 bytes
-BenchmarkRandomPfx6Size/1_000     	       1	    593192 bytes
-BenchmarkRandomPfx6Size/1_000     	       1	    593192 bytes
-BenchmarkRandomPfx6Size/1_000     	       1	    593192 bytes
-BenchmarkRandomPfx6Size/1_000     	       1	    593192 bytes
-BenchmarkRandomPfx6Size/1_000     	       1	    593192 bytes
-BenchmarkRandomPfx6Size/10_000    	       1	   5851080 bytes
-BenchmarkRandomPfx6Size/10_000    	       1	   5852760 bytes
-BenchmarkRandomPfx6Size/10_000    	       1	   5852760 bytes
-BenchmarkRandomPfx6Size/10_000    	       1	   5852760 bytes
-BenchmarkRandomPfx6Size/10_000    	       1	   5852760 bytes
-BenchmarkRandomPfx6Size/10_000    	       1	   5852760 bytes
-BenchmarkRandomPfx6Size/100_000   	       1	  57407240 bytes
-BenchmarkRandomPfx6Size/100_000   	       1	  57408904 bytes
-BenchmarkRandomPfx6Size/100_000   	       1	  57408904 bytes
-BenchmarkRandomPfx6Size/100_000   	       1	  57408904 bytes
-BenchmarkRandomPfx6Size/100_000   	       1	  57408904 bytes
-BenchmarkRandomPfx6Size/100_000   	       1	  57408904 bytes
+BenchmarkRandomPfx6Size/1_000     	       1	    592792 bytes
+BenchmarkRandomPfx6Size/1_000     	       1	    594472 bytes
+BenchmarkRandomPfx6Size/1_000     	       1	    594472 bytes
+BenchmarkRandomPfx6Size/1_000     	       1	    594472 bytes
+BenchmarkRandomPfx6Size/1_000     	       1	    594472 bytes
+BenchmarkRandomPfx6Size/1_000     	       1	    594472 bytes
+BenchmarkRandomPfx6Size/10_000    	       1	   5860632 bytes
+BenchmarkRandomPfx6Size/10_000    	       1	   5862312 bytes
+BenchmarkRandomPfx6Size/10_000    	       1	   5862312 bytes
+BenchmarkRandomPfx6Size/10_000    	       1	   5862312 bytes
+BenchmarkRandomPfx6Size/10_000    	       1	   5862312 bytes
+BenchmarkRandomPfx6Size/10_000    	       1	   5862312 bytes
+BenchmarkRandomPfx6Size/100_000   	       1	  57422520 bytes
+BenchmarkRandomPfx6Size/100_000   	       1	  57424200 bytes
+BenchmarkRandomPfx6Size/100_000   	       1	  57424200 bytes
+BenchmarkRandomPfx6Size/100_000   	       1	  57424200 bytes
+BenchmarkRandomPfx6Size/100_000   	       1	  57424200 bytes
+BenchmarkRandomPfx6Size/100_000   	       1	  57424200 bytes
 BenchmarkRandomPfx6Size/1_000_000 	       1	 560095016 bytes
 BenchmarkRandomPfx6Size/1_000_000 	       1	 560096696 bytes
 BenchmarkRandomPfx6Size/1_000_000 	       1	 560096696 bytes
 BenchmarkRandomPfx6Size/1_000_000 	       1	 560096696 bytes
-BenchmarkRandomPfx6Size/1_000_000 	       1	 560096696 bytes
-BenchmarkRandomPfx6Size/1_000_000 	       1	 560096696 bytes
-BenchmarkRandomPfxSize/100        	       1	     53736 bytes
-BenchmarkRandomPfxSize/100        	       1	     56392 bytes
-BenchmarkRandomPfxSize/100        	       1	     56392 bytes
-BenchmarkRandomPfxSize/100        	       1	     56392 bytes
-BenchmarkRandomPfxSize/100        	       1	     56392 bytes
-BenchmarkRandomPfxSize/100        	       1	     56392 bytes
-BenchmarkRandomPfxSize/1_000      	       1	    525080 bytes
-BenchmarkRandomPfxSize/1_000      	       1	    537464 bytes
-BenchmarkRandomPfxSize/1_000      	       1	    537464 bytes
-BenchmarkRandomPfxSize/1_000      	       1	    537464 bytes
-BenchmarkRandomPfxSize/1_000      	       1	    537464 bytes
-BenchmarkRandomPfxSize/1_000      	       1	    537464 bytes
-BenchmarkRandomPfxSize/10_000     	       1	   5156840 bytes
-BenchmarkRandomPfxSize/10_000     	       1	   5268536 bytes
-BenchmarkRandomPfxSize/10_000     	       1	   5268536 bytes
-BenchmarkRandomPfxSize/10_000     	       1	   5268536 bytes
-BenchmarkRandomPfxSize/10_000     	       1	   5268536 bytes
-BenchmarkRandomPfxSize/10_000     	       1	   5268536 bytes
-BenchmarkRandomPfxSize/100_000    	       1	  48769592 bytes
-BenchmarkRandomPfxSize/100_000    	       1	  49842752 bytes
-BenchmarkRandomPfxSize/100_000    	       1	  49842744 bytes
-BenchmarkRandomPfxSize/100_000    	       1	  49842744 bytes
-BenchmarkRandomPfxSize/100_000    	       1	  49842744 bytes
-BenchmarkRandomPfxSize/100_000    	       1	  49842744 bytes
-BenchmarkRandomPfxSize/1_000_000  	       1	 435278312 bytes
-BenchmarkRandomPfxSize/1_000_000  	       1	 445526776 bytes
-BenchmarkRandomPfxSize/1_000_000  	       1	 445526776 bytes
-BenchmarkRandomPfxSize/1_000_000  	       1	 445526792 bytes
-BenchmarkRandomPfxSize/1_000_000  	       1	 445526776 bytes
-BenchmarkRandomPfxSize/1_000_000  	       1	 445526760 bytes
-PASS
-ok  	local/iprbench/cidranger	592.032s
+BenchmarkRandomPfx6Size/1_000_000 	SIGQUIT: quit
+PC=0x519116 m=0 sigcode=0
+
+goroutine 232 gp=0xc01aa028c0 m=0 mp=0x674aa0 [running]:
+net.simpleMaskLength(...)
+	/usr/local/go/src/net/ip.go:387
+net.IPMask.Size(...)
+	/usr/local/go/src/net/ip.go:409
+github.com/yl2chen/cidranger/net.Network.LeastCommonBitPosition({{{0xc027c2b980, 0x10, 0x10}, {0xc027c2b990, 0x10, 0x10}}, {0xc027c2b9a0, 0x4, 0x4}, {0xc027c2ba20, ...}}, ...)
+	/home/ubuntu/go/pkg/mod/github.com/yl2chen/cidranger@v1.0.2/net/ip.go:226 +0x196 fp=0xc00002beb0 sp=0xc00002be58 pc=0x519116
+github.com/yl2chen/cidranger.(*prefixTrie).insert(0xc03af2c000, {{{0xc027c2b980, 0x10, 0x10}, {0xc027c2b990, 0x10, 0x10}}, {0xc027c2b9a0, 0x4, 0x4}, ...}, ...)
+	/home/ubuntu/go/pkg/mod/github.com/yl2chen/cidranger@v1.0.2/trie.go:242 +0x225 fp=0xc00002c058 sp=0xc00002beb0 pc=0x51a705
+github.com/yl2chen/cidranger.(*prefixTrie).insert(0xc051ffee70, {{{0xc027c2b980, 0x10, 0x10}, {0xc027c2b990, 0x10, 0x10}}, {0xc027c2b9a0, 0x4, 0x4}, ...}, ...)
+	/home/ubuntu/go/pkg/mod/github.com/yl2chen/cidranger@v1.0.2/trie.go:253 +0x2eb fp=0xc00002c200 sp=0xc00002c058 pc=0x51a7cb
+github.com/yl2chen/cidranger.(*prefixTrie).insert(0xc0455b66e0, {{{0xc027c2b980, 0x10, 0x10}, {0xc027c2b990, 0x10, 0x10}}, {0xc027c2b9a0, 0x4, 0x4}, ...}, ...)
+	/home/ubuntu/go/pkg/mod/github.com/yl2chen/cidranger@v1.0.2/trie.go:253 +0x2eb fp=0xc00002c3a8 sp=0xc00002c200 pc=0x51a7cb
+github.com/yl2chen/cidranger.(*prefixTrie).insert(0xc04342d130, {{{0xc027c2b980, 0x10, 0x10}, {0xc027c2b990, 0x10, 0x10}}, {0xc027c2b9a0, 0x4, 0x4}, ...}, ...)
+	/home/ubuntu/go/pkg/mod/github.com/yl2chen/cidranger@v1.0.2/trie.go:253 +0x2eb fp=0xc00002c550 sp=0xc00002c3a8 pc=0x51a7cb
+github.com/yl2chen/cidranger.(*prefixTrie).insert(0xc03f4ce000, {{{0xc027c2b980, 0x10, 0x10}, {0xc027c2b990, 0x10, 0x10}}, {0xc027c2b9a0, 0x4, 0x4}, ...}, ...)
+	/home/ubuntu/go/pkg/mod/github.com/yl2chen/cidranger@v1.0.2/trie.go:253 +0x2eb fp=0xc00002c6f8 sp=0xc00002c550 pc=0x51a7cb
+github.com/yl2chen/cidranger.(*prefixTrie).insert(0xc039a6d970, {{{0xc027c2b980, 0x10, 0x10}, {0xc027c2b990, 0x10, 0x10}}, {0xc027c2b9a0, 0x4, 0x4}, ...}, ...)
+	/home/ubuntu/go/pkg/mod/github.com/yl2chen/cidranger@v1.0.2/trie.go:253 +0x2eb fp=0xc00002c8a0 sp=0xc00002c6f8 pc=0x51a7cb
+github.com/yl2chen/cidranger.(*prefixTrie).insert(0xc03991f6b0, {{{0xc027c2b980, 0x10, 0x10}, {0xc027c2b990, 0x10, 0x10}}, {0xc027c2b9a0, 0x4, 0x4}, ...}, ...)
+	/home/ubuntu/go/pkg/mod/github.com/yl2chen/cidranger@v1.0.2/trie.go:253 +0x2eb fp=0xc00002ca48 sp=0xc00002c8a0 pc=0x51a7cb
+github.com/yl2chen/cidranger.(*prefixTrie).insert(0xc02aa46370, {{{0xc027c2b980, 0x10, 0x10}, {0xc027c2b990, 0x10, 0x10}}, {0xc027c2b9a0, 0x4, 0x4}, ...}, ...)
+	/home/ubuntu/go/pkg/mod/github.com/yl2chen/cidranger@v1.0.2/trie.go:253 +0x2eb fp=0xc00002cbf0 sp=0xc00002ca48 pc=0x51a7cb
+github.com/yl2chen/cidranger.(*prefixTrie).insert(0xc0000bbad0, {{{0xc027c2b980, 0x10, 0x10}, {0xc027c2b990, 0x10, 0x10}}, {0xc027c2b9a0, 0x4, 0x4}, ...}, ...)
+	/home/ubuntu/go/pkg/mod/github.com/yl2chen/cidranger@v1.0.2/trie.go:253 +0x2eb fp=0xc00002cd98 sp=0xc00002cbf0 pc=0x51a7cb
+github.com/yl2chen/cidranger.(*prefixTrie).insert(0xc02d05a790, {{{0xc027c2b980, 0x10, 0x10}, {0xc027c2b990, 0x10, 0x10}}, {0xc027c2b9a0, 0x4, 0x4}, ...}, ...)
+	/home/ubuntu/go/pkg/mod/github.com/yl2chen/cidranger@v1.0.2/trie.go:253 +0x2eb fp=0xc00002cf40 sp=0xc00002cd98 pc=0x51a7cb
+github.com/yl2chen/cidranger.(*prefixTrie).insert(0xc00d7dd130, {{{0xc027c2b980, 0x10, 0x10}, {0xc027c2b990, 0x10, 0x10}}, {0xc027c2b9a0, 0x4, 0x4}, ...}, ...)
+	/home/ubuntu/go/pkg/mod/github.com/yl2chen/cidranger@v1.0.2/trie.go:253 +0x2eb fp=0xc00002d0e8 sp=0xc00002cf40 pc=0x51a7cb
+github.com/yl2chen/cidranger.(*prefixTrie).insert(0xc01dd62790, {{{0xc027c2b980, 0x10, 0x10}, {0xc027c2b990, 0x10, 0x10}}, {0xc027c2b9a0, 0x4, 0x4}, ...}, ...)
+	/home/ubuntu/go/pkg/mod/github.com/yl2chen/cidranger@v1.0.2/trie.go:253 +0x2eb fp=0xc00002d290 sp=0xc00002d0e8 pc=0x51a7cb
+github.com/yl2chen/cidranger.(*prefixTrie).insert(0xc00d7dd290, {{{0xc027c2b980, 0x10, 0x10}, {0xc027c2b990, 0x10, 0x10}}, {0xc027c2b9a0, 0x4, 0x4}, ...}, ...)
+	/home/ubuntu/go/pkg/mod/github.com/yl2chen/cidranger@v1.0.2/trie.go:253 +0x2eb fp=0xc00002d438 sp=0xc00002d290 pc=0x51a7cb
+github.com/yl2chen/cidranger.(*prefixTrie).insert(0xc01dd62bb0, {{{0xc027c2b980, 0x10, 0x10}, {0xc027c2b990, 0x10, 0x10}}, {0xc027c2b9a0, 0x4, 0x4}, ...}, ...)
+	/home/ubuntu/go/pkg/mod/github.com/yl2chen/cidranger@v1.0.2/trie.go:253 +0x2eb fp=0xc00002d5e0 sp=0xc00002d438 pc=0x51a7cb
+github.com/yl2chen/cidranger.(*prefixTrie).insert(0xc0466cb130, {{{0xc027c2b980, 0x10, 0x10}, {0xc027c2b990, 0x10, 0x10}}, {0xc027c2b9a0, 0x4, 0x4}, ...}, ...)
+	/home/ubuntu/go/pkg/mod/github.com/yl2chen/cidranger@v1.0.2/trie.go:253 +0x2eb fp=0xc00002d788 sp=0xc00002d5e0 pc=0x51a7cb
+github.com/yl2chen/cidranger.(*prefixTrie).insert(0xc0466ca4d0, {{{0xc027c2b980, 0x10, 0x10}, {0xc027c2b990, 0x10, 0x10}}, {0xc027c2b9a0, 0x4, 0x4}, ...}, ...)
+	/home/ubuntu/go/pkg/mod/github.com/yl2chen/cidranger@v1.0.2/trie.go:253 +0x2eb fp=0xc00002d930 sp=0xc00002d788 pc=0x51a7cb
+github.com/yl2chen/cidranger.(*prefixTrie).insert(0xc0466ca630, {{{0xc027c2b980, 0x10, 0x10}, {0xc027c2b990, 0x10, 0x10}}, {0xc027c2b9a0, 0x4, 0x4}, ...}, ...)
+	/home/ubuntu/go/pkg/mod/github.com/yl2chen/cidranger@v1.0.2/trie.go:253 +0x2eb fp=0xc00002dad8 sp=0xc00002d930 pc=0x51a7cb
+github.com/yl2chen/cidranger.(*prefixTrie).insert(0xc0466cb340, {{{0xc027c2b980, 0x10, 0x10}, {0xc027c2b990, 0x10, 0x10}}, {0xc027c2b9a0, 0x4, 0x4}, ...}, ...)
+	/home/ubuntu/go/pkg/mod/github.com/yl2chen/cidranger@v1.0.2/trie.go:253 +0x2eb fp=0xc00002dc80 sp=0xc00002dad8 pc=0x51a7cb
+github.com/yl2chen/cidranger.(*prefixTrie).Insert(0xc0466cb340, {0x5936c0, 0xc03ba40f30})
+	/home/ubuntu/go/pkg/mod/github.com/yl2chen/cidranger@v1.0.2/trie.go:84 +0x130 fp=0xc00002dde0 sp=0xc00002dc80 pc=0x519ad0
+github.com/yl2chen/cidranger.(*versionedRanger).Insert(0xc000162080, {0x5936c0, 0xc03ba40f30})
+	/home/ubuntu/go/pkg/mod/github.com/yl2chen/cidranger@v1.0.2/version.go:29 +0xba fp=0xc00002de70 sp=0xc00002dde0 pc=0x51b07a
+local/iprbench/cidranger_test.BenchmarkRandomPfx6Size.func1(0xc000152c88)
+	/home/ubuntu/git/iprbench/cidranger/size_test.go:69 +0x1ec fp=0xc00002df50 sp=0xc00002de70 pc=0x51cd8c
+testing.(*B).runN(0xc000152c88, 0x1)
+	/usr/local/go/src/testing/benchmark.go:193 +0xf8 fp=0xc00002dfa0 sp=0xc00002df50 pc=0x4c12d8
+testing.(*B).run1.func1()
+	/usr/local/go/src/testing/benchmark.go:215 +0x4e fp=0xc00002dfe0 sp=0xc00002dfa0 pc=0x4c190e
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc00002dfe8 sp=0xc00002dfe0 pc=0x471181
+created by testing.(*B).run1 in goroutine 175
+	/usr/local/go/src/testing/benchmark.go:208 +0x90
+
+goroutine 1 gp=0xc0000061c0 m=nil [chan receive, 3 minutes]:
+runtime.gopark(0x4?, 0xaa00561100?, 0x17?, 0x0?, 0xdf830d68?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc00d7d9880 sp=0xc00d7d9860 pc=0x43cf8e
+runtime.chanrecv(0xc00010e240, 0x0, 0x1)
+	/usr/local/go/src/runtime/chan.go:583 +0x3bf fp=0xc00d7d98f8 sp=0xc00d7d9880 pc=0x40819f
+runtime.chanrecv1(0x40ec7e?, 0x7f99df82fc88?)
+	/usr/local/go/src/runtime/chan.go:442 +0x12 fp=0xc00d7d9920 sp=0xc00d7d98f8 pc=0x407dd2
+testing.(*B).run1(0xc000152a08)
+	/usr/local/go/src/testing/benchmark.go:217 +0xa6 fp=0xc00d7d9a10 sp=0xc00d7d9920 pc=0x4c14a6
+testing.(*B).Run(0xc000152288, {0x5611e4?, 0x48188f?}, 0x569678)
+	/usr/local/go/src/testing/benchmark.go:682 +0x497 fp=0xc00d7d9b10 sp=0xc00d7d9a10 pc=0x4c3fb7
+testing.runBenchmarks.func1(0xc000152288)
+	/usr/local/go/src/testing/benchmark.go:543 +0x37 fp=0xc00d7d9b50 sp=0xc00d7d9b10 pc=0x4c30b7
+testing.(*B).runN(0xc000152288, 0x1)
+	/usr/local/go/src/testing/benchmark.go:193 +0xf8 fp=0xc00d7d9ba0 sp=0xc00d7d9b50 pc=0x4c12d8
+testing.runBenchmarks({0x561703, 0x18}, 0x0?, {0x66f0e0, 0x8, 0x4b484e?})
+	/usr/local/go/src/testing/benchmark.go:552 +0x605 fp=0xc00d7d9ca0 sp=0xc00d7d9ba0 pc=0x4c3005
+testing.(*M).Run(0xc000120280)
+	/usr/local/go/src/testing/testing.go:2043 +0x9f6 fp=0xc00d7d9ed0 sp=0xc00d7d9ca0 pc=0x4ceaf6
+main.main()
+	_testmain.go:61 +0x16c fp=0xc00d7d9f50 sp=0xc00d7d9ed0 pc=0x51ddac
+runtime.main()
+	/usr/local/go/src/runtime/proc.go:271 +0x29d fp=0xc00d7d9fe0 sp=0xc00d7d9f50 pc=0x43cb3d
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc00d7d9fe8 sp=0xc00d7d9fe0 pc=0x471181
+
+goroutine 2 gp=0xc000006c40 m=nil [force gc (idle), 10 minutes]:
+runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc00008cfa8 sp=0xc00008cf88 pc=0x43cf8e
+runtime.goparkunlock(...)
+	/usr/local/go/src/runtime/proc.go:408
+runtime.forcegchelper()
+	/usr/local/go/src/runtime/proc.go:326 +0xb3 fp=0xc00008cfe0 sp=0xc00008cfa8 pc=0x43cdf3
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc00008cfe8 sp=0xc00008cfe0 pc=0x471181
+created by runtime.init.6 in goroutine 1
+	/usr/local/go/src/runtime/proc.go:314 +0x1a
+
+goroutine 3 gp=0xc000007180 m=nil [GC sweep wait]:
+runtime.gopark(0x1?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc00008d780 sp=0xc00008d760 pc=0x43cf8e
+runtime.goparkunlock(...)
+	/usr/local/go/src/runtime/proc.go:408
+runtime.bgsweep(0xc0000b6000)
+	/usr/local/go/src/runtime/mgcsweep.go:318 +0xdf fp=0xc00008d7c8 sp=0xc00008d780 pc=0x42723f
+runtime.gcenable.gowrap1()
+	/usr/local/go/src/runtime/mgc.go:203 +0x25 fp=0xc00008d7e0 sp=0xc00008d7c8 pc=0x41bb45
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc00008d7e8 sp=0xc00008d7e0 pc=0x471181
+created by runtime.gcenable in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:203 +0x66
+
+goroutine 4 gp=0xc000007340 m=nil [sleep]:
+runtime.gopark(0xc0000c4000?, 0x9b2300a0d6e98?, 0x0?, 0x0?, 0x5697e8?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc00008df38 sp=0xc00008df18 pc=0x43cf8e
+runtime.goparkunlock(...)
+	/usr/local/go/src/runtime/proc.go:408
+runtime.(*scavengerState).sleep(0x674120, 0x41316dfd00000000)
+	/usr/local/go/src/runtime/mgcscavenge.go:504 +0x113 fp=0xc00008dfa8 sp=0xc00008df38 pc=0x424db3
+runtime.bgscavenge(0xc0000b6000)
+	/usr/local/go/src/runtime/mgcscavenge.go:662 +0x74 fp=0xc00008dfc8 sp=0xc00008dfa8 pc=0x4251b4
+runtime.gcenable.gowrap2()
+	/usr/local/go/src/runtime/mgc.go:204 +0x25 fp=0xc00008dfe0 sp=0xc00008dfc8 pc=0x41bae5
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc00008dfe8 sp=0xc00008dfe0 pc=0x471181
+created by runtime.gcenable in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:204 +0xa5
+
+goroutine 18 gp=0xc000102700 m=nil [finalizer wait, 10 minutes]:
+runtime.gopark(0x0?, 0x5696d8?, 0x20?, 0xc0?, 0x2000000020?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc00008c620 sp=0xc00008c600 pc=0x43cf8e
+runtime.runfinq()
+	/usr/local/go/src/runtime/mfinal.go:194 +0x107 fp=0xc00008c7e0 sp=0xc00008c620 pc=0x41ab87
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc00008c7e8 sp=0xc00008c7e0 pc=0x471181
+created by runtime.createfing in goroutine 1
+	/usr/local/go/src/runtime/mfinal.go:164 +0x3d
+
+goroutine 19 gp=0xc0001028c0 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc000088750 sp=0xc000088730 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc0000887e0 sp=0xc000088750 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc0000887e8 sp=0xc0000887e0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 34 gp=0xc000512000 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x6d4f40?, 0x1?, 0x40?, 0xde?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc000518750 sp=0xc000518730 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc0005187e0 sp=0xc000518750 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc0005187e8 sp=0xc0005187e0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 20 gp=0xc000102a80 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x9b1997d1fc317?, 0x1?, 0xac?, 0x4a?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc000088f50 sp=0xc000088f30 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc000088fe0 sp=0xc000088f50 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc000088fe8 sp=0xc000088fe0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 5 gp=0xc000007880 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x9b1997d1ebc77?, 0x3?, 0xb2?, 0x6c?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc00008e750 sp=0xc00008e730 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc00008e7e0 sp=0xc00008e750 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc00008e7e8 sp=0xc00008e7e0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 35 gp=0xc0005121c0 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x6d4f40?, 0x1?, 0x90?, 0x51?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc000518f50 sp=0xc000518f30 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc000518fe0 sp=0xc000518f50 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc000518fe8 sp=0xc000518fe0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 6 gp=0xc000007a40 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x6d4f40?, 0x3?, 0xc5?, 0xd?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc00008ef50 sp=0xc00008ef30 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc00008efe0 sp=0xc00008ef50 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc00008efe8 sp=0xc00008efe0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 36 gp=0xc000512380 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x9b1997cfa9d66?, 0x3?, 0x8f?, 0x8d?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc000519750 sp=0xc000519730 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc0005197e0 sp=0xc000519750 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc0005197e8 sp=0xc0005197e0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 7 gp=0xc000007c00 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x9b1997d1ecd07?, 0x1?, 0xa4?, 0x5c?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc00008f750 sp=0xc00008f730 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc00008f7e0 sp=0xc00008f750 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc00008f7e8 sp=0xc00008f7e0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 37 gp=0xc000512540 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x9b1997cf7784e?, 0x3?, 0x5?, 0x68?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc000519f50 sp=0xc000519f30 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc000519fe0 sp=0xc000519f50 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc000519fe8 sp=0xc000519fe0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 8 gp=0xc000007dc0 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x9b1997cfabd28?, 0x3?, 0xce?, 0x13?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc00008ff50 sp=0xc00008ff30 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc00008ffe0 sp=0xc00008ff50 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc00008ffe8 sp=0xc00008ffe0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 38 gp=0xc000512700 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x9b1997cf952ec?, 0x3?, 0x69?, 0xf?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc00051a750 sp=0xc00051a730 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc00051a7e0 sp=0xc00051a750 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc00051a7e8 sp=0xc00051a7e0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 9 gp=0xc0000c6000 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x6d4f40?, 0x3?, 0x59?, 0xde?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc000514750 sp=0xc000514730 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc0005147e0 sp=0xc000514750 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc0005147e8 sp=0xc0005147e0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 39 gp=0xc0005128c0 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x9b1997d1facc8?, 0x1?, 0xdd?, 0xe0?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc00051af50 sp=0xc00051af30 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc00051afe0 sp=0xc00051af50 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc00051afe8 sp=0xc00051afe0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 10 gp=0xc0000c61c0 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x9b1997d272c79?, 0x1?, 0x9d?, 0x14?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc000514f50 sp=0xc000514f30 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc000514fe0 sp=0xc000514f50 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc000514fe8 sp=0xc000514fe0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 40 gp=0xc000512a80 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x6d4f40?, 0x1?, 0xaf?, 0xd7?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc00051b750 sp=0xc00051b730 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc00051b7e0 sp=0xc00051b750 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc00051b7e8 sp=0xc00051b7e0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 11 gp=0xc0000c6380 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x6d4f40?, 0x1?, 0xcf?, 0x7d?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc000515750 sp=0xc000515730 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc0005157e0 sp=0xc000515750 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc0005157e8 sp=0xc0005157e0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 41 gp=0xc000512c40 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x9b1997d22419e?, 0x3?, 0x49?, 0x76?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc00051bf50 sp=0xc00051bf30 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc00051bfe0 sp=0xc00051bf50 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc00051bfe8 sp=0xc00051bfe0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 12 gp=0xc0000c6540 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x9b1997cfad786?, 0x3?, 0x98?, 0x21?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc000515f50 sp=0xc000515f30 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc000515fe0 sp=0xc000515f50 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc000515fe8 sp=0xc000515fe0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 42 gp=0xc000512e00 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x9b1997d20d316?, 0x3?, 0x99?, 0xb3?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc000524750 sp=0xc000524730 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc0005247e0 sp=0xc000524750 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc0005247e8 sp=0xc0005247e0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 13 gp=0xc0000c6700 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x9b1997d276bd5?, 0x1?, 0xe1?, 0x43?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc000516750 sp=0xc000516730 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc0005167e0 sp=0xc000516750 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc0005167e8 sp=0xc0005167e0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 43 gp=0xc000512fc0 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x9b1997d1fadd6?, 0x1?, 0xd9?, 0xa4?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc000524f50 sp=0xc000524f30 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc000524fe0 sp=0xc000524f50 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc000524fe8 sp=0xc000524fe0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 14 gp=0xc0000c68c0 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x6d4f40?, 0x1?, 0x6c?, 0x8d?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc000516f50 sp=0xc000516f30 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc000516fe0 sp=0xc000516f50 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc000516fe8 sp=0xc000516fe0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 44 gp=0xc000513180 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x9b1997d278f39?, 0x3?, 0x8?, 0x30?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc000525750 sp=0xc000525730 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc0005257e0 sp=0xc000525750 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc0005257e8 sp=0xc0005257e0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 15 gp=0xc0000c6a80 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x9b1997cfa01e3?, 0x3?, 0xd5?, 0xed?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc000517750 sp=0xc000517730 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc0005177e0 sp=0xc000517750 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc0005177e8 sp=0xc0005177e0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 45 gp=0xc000513340 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x9b1997d1e817b?, 0x1?, 0x17?, 0x24?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc000525f50 sp=0xc000525f30 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc000525fe0 sp=0xc000525f50 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc000525fe8 sp=0xc000525fe0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 16 gp=0xc0000c6c40 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x9b1997cfaa824?, 0x3?, 0x1f?, 0x62?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc000517f50 sp=0xc000517f30 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc000517fe0 sp=0xc000517f50 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc000517fe8 sp=0xc000517fe0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 46 gp=0xc000513500 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x9b1997d207826?, 0x1?, 0x33?, 0x42?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc000526750 sp=0xc000526730 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc0005267e0 sp=0xc000526750 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc0005267e8 sp=0xc0005267e0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 50 gp=0xc0000c6e00 m=nil [GC worker (idle)]:
+runtime.gopark(0x9b22ee912e339?, 0x3?, 0x9a?, 0x73?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc000520750 sp=0xc000520730 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc0005207e0 sp=0xc000520750 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc0005207e8 sp=0xc0005207e0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 47 gp=0xc0005136c0 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x9b1997cf9650c?, 0x3?, 0x6b?, 0x81?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc000526f50 sp=0xc000526f30 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc000526fe0 sp=0xc000526f50 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc000526fe8 sp=0xc000526fe0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 51 gp=0xc0000c6fc0 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x9b1997d2151a7?, 0x3?, 0x8b?, 0x61?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc000520f50 sp=0xc000520f30 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc000520fe0 sp=0xc000520f50 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc000520fe8 sp=0xc000520fe0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 48 gp=0xc000513880 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x9b1997cfad5a6?, 0x1?, 0xab?, 0x49?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc000527750 sp=0xc000527730 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc0005277e0 sp=0xc000527750 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc0005277e8 sp=0xc0005277e0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 52 gp=0xc0000c7180 m=nil [GC worker (idle), 10 minutes]:
+runtime.gopark(0x9b1997cfa84ac?, 0x3?, 0x70?, 0x12?, 0x0?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc000521750 sp=0xc000521730 pc=0x43cf8e
+runtime.gcBgMarkWorker()
+	/usr/local/go/src/runtime/mgc.go:1310 +0xe5 fp=0xc0005217e0 sp=0xc000521750 pc=0x41dc25
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc0005217e8 sp=0xc0005217e0 pc=0x471181
+created by runtime.gcBgMarkStartWorkers in goroutine 1
+	/usr/local/go/src/runtime/mgc.go:1234 +0x1c
+
+goroutine 175 gp=0xc01aa02700 m=nil [chan receive]:
+runtime.gopark(0x490125?, 0xed0012a000?, 0x48?, 0xbb?, 0xdf830d68?)
+	/usr/local/go/src/runtime/proc.go:402 +0xce fp=0xc00d7dba88 sp=0xc00d7dba68 pc=0x43cf8e
+runtime.chanrecv(0xc00010e2a0, 0x0, 0x1)
+	/usr/local/go/src/runtime/chan.go:583 +0x3bf fp=0xc00d7dbb00 sp=0xc00d7dba88 pc=0x40819f
+runtime.chanrecv1(0x40ec7e?, 0x7f99df82fc88?)
+	/usr/local/go/src/runtime/chan.go:442 +0x12 fp=0xc00d7dbb28 sp=0xc00d7dbb00 pc=0x407dd2
+testing.(*B).run1(0xc000152c88)
+	/usr/local/go/src/testing/benchmark.go:217 +0xa6 fp=0xc00d7dbc18 sp=0xc00d7dbb28 pc=0x4c14a6
+testing.(*benchContext).processBench(0xc0000120d8, 0x250?)
+	/usr/local/go/src/testing/benchmark.go:580 +0x36d fp=0xc00d7dbdb8 sp=0xc00d7dbc18 pc=0x4c346d
+testing.(*B).run(0xc000152508?)
+	/usr/local/go/src/testing/benchmark.go:258 +0x65 fp=0xc00d7dbde8 sp=0xc00d7dbdb8 pc=0x4c19e5
+testing.(*B).Run(0xc000152a08, {0x55d80a?, 0xf4240?}, 0xc03a99c000)
+	/usr/local/go/src/testing/benchmark.go:683 +0x4a5 fp=0xc00d7dbee8 sp=0xc00d7dbde8 pc=0x4c3fc5
+local/iprbench/cidranger_test.BenchmarkRandomPfx6Size(0xc000152a08)
+	/home/ubuntu/git/iprbench/cidranger/size_test.go:66 +0x85 fp=0xc00d7dbf50 sp=0xc00d7dbee8 pc=0x51caa5
+testing.(*B).runN(0xc000152a08, 0x1)
+	/usr/local/go/src/testing/benchmark.go:193 +0xf8 fp=0xc00d7dbfa0 sp=0xc00d7dbf50 pc=0x4c12d8
+testing.(*B).run1.func1()
+	/usr/local/go/src/testing/benchmark.go:215 +0x4e fp=0xc00d7dbfe0 sp=0xc00d7dbfa0 pc=0x4c190e
+runtime.goexit({})
+	/usr/local/go/src/runtime/asm_amd64.s:1695 +0x1 fp=0xc00d7dbfe8 sp=0xc00d7dbfe0 pc=0x471181
+created by testing.(*B).run1 in goroutine 1
+	/usr/local/go/src/testing/benchmark.go:208 +0x90
+
+rax    0x2
+rbx    0x51
+rcx    0x10
+rdx    0xc035578b40
+rdi    0xc00002bf70
+rsi    0x11
+rbp    0xc00002bea0
+rsp    0xc00002be58
+r8     0xc03af2c000
+r9     0x0
+r10    0x180
+r11    0x0
+r12    0xc0661ebce0
+r13    0x0
+r14    0xc01aa028c0
+r15    0x1fffffffff
+rip    0x519116
+rflags 0x282
+cs     0x33
+fs     0x0
+gs     0x0
+*** Test killed with quit: ran too long (11m0s).
+exit status 2
+FAIL	local/iprbench/cidranger	660.233s

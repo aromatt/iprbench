@@ -2,6 +2,12 @@ github.com/Asphaltt/lpmtrie v0.0.0-20220205153150-3d814250b8ab h1:hzN25CB5VzeKk3
 github.com/Asphaltt/lpmtrie v0.0.0-20220205153150-3d814250b8ab/go.mod h1:TdNTLzn3VVXKfmHAULK5gY+h/A1gLQ8NnwLB6cSN54g=
 github.com/aromatt/netipds v0.1.6 h1:5rWBw/he4DA9hCRyqRnTW3g5LJ+HyDyCHy+GFELMWOI=
 github.com/aromatt/netipds v0.1.6/go.mod h1:TVWwAV/IghERh+218SzJz1DfixOswt5/BhiOAUs99Hc=
+github.com/aromatt/netipds v0.1.7-0.20241220051104-53f67b68151e h1:YSMyw+9Z9ZwOnajsz2oquok6RrL+ei1leCV9EaRsTa0=
+github.com/aromatt/netipds v0.1.7-0.20241220051104-53f67b68151e/go.mod h1:TVWwAV/IghERh+218SzJz1DfixOswt5/BhiOAUs99Hc=
+github.com/aromatt/netipds v0.1.7-0.20241220061035-539508a19c1f h1:YrXAmiKjfOfwuHRSazLDKZPwC1PQkZWDWFZmLlYOO1s=
+github.com/aromatt/netipds v0.1.7-0.20241220061035-539508a19c1f/go.mod h1:TVWwAV/IghERh+218SzJz1DfixOswt5/BhiOAUs99Hc=
+github.com/aromatt/netipds v0.1.7-0.20241220162211-9c402f65b32a h1:Suk5czfAJm1Mc1eSAVMNj71+okXH/2pnHS4VHzgtYEM=
+github.com/aromatt/netipds v0.1.7-0.20241220162211-9c402f65b32a/go.mod h1:TVWwAV/IghERh+218SzJz1DfixOswt5/BhiOAUs99Hc=
 github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/gaissmai/bart v0.15.4 h1:ttvMT068X6BqmK0ZYKF+h1IUB29XI0r+UshDh/61fTA=
