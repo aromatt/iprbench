@@ -6,7 +6,7 @@ dep:
 	go mod tidy
 	go install golang.org/x/perf/cmd/benchstat@latest
 
-size: art/size.bm bart/size.bm cidrtree/size.bm critbitgo/size.bm lpmtrie/size.bm cidranger/size.bm
+size: art/size.bm bart/size.bm cidrtree/size.bm critbitgo/size.bm lpmtrie/size.bm cidranger/size.bm netipds/size.bm
 	@echo
 	@benchstat -ignore=pkg bart/size.bm art/size.bm
 	@echo
@@ -17,8 +17,10 @@ size: art/size.bm bart/size.bm cidrtree/size.bm critbitgo/size.bm lpmtrie/size.b
 	@benchstat -ignore=pkg bart/size.bm lpmtrie/size.bm
 	@echo
 	@benchstat -ignore=pkg bart/size.bm cidranger/size.bm
+	@echo
+	@benchstat -ignore=pkg bart/size.bm netipds/size.bm
 
-update: art/update.bm bart/update.bm cidrtree/update.bm critbitgo/update.bm lpmtrie/update.bm cidranger/update.bm
+update: art/update.bm bart/update.bm cidrtree/update.bm critbitgo/update.bm lpmtrie/update.bm cidranger/update.bm netipds/update.bm
 	@echo
 	@benchstat -ignore=pkg bart/update.bm art/update.bm
 	@echo
@@ -29,8 +31,10 @@ update: art/update.bm bart/update.bm cidrtree/update.bm critbitgo/update.bm lpmt
 	@benchstat -ignore=pkg bart/update.bm lpmtrie/update.bm
 	@echo
 	@benchstat -ignore=pkg bart/update.bm cidranger/update.bm
+	@echo
+	@benchstat -ignore=pkg bart/update.bm netipds/update.bm
 
-lookup: art/lookup.bm bart/lookup.bm cidrtree/lookup.bm critbitgo/lookup.bm lpmtrie/lookup.bm cidranger/lookup.bm
+lookup: art/lookup.bm bart/lookup.bm cidrtree/lookup.bm critbitgo/lookup.bm lpmtrie/lookup.bm cidranger/lookup.bm netipds/lookup.bm
 	@echo
 	@benchstat -ignore=pkg bart/lookup.bm art/lookup.bm
 	@echo
@@ -41,6 +45,8 @@ lookup: art/lookup.bm bart/lookup.bm cidrtree/lookup.bm critbitgo/lookup.bm lpmt
 	@benchstat -ignore=pkg bart/lookup.bm lpmtrie/lookup.bm
 	@echo
 	@benchstat -ignore=pkg bart/lookup.bm cidranger/lookup.bm
+	@echo
+	@benchstat -ignore=pkg bart/lookup.bm netipds/lookup.bm
 
 #
 # benchmarks for lpm lookup
@@ -62,6 +68,9 @@ lpmtrie/lookup.bm:
 
 cidranger/lookup.bm:
 	cd cidranger &&   go test -run=XXX  -cpu=1 -count=10 -bench=Lpm -timeout=25m | tee lookup.bm
+
+netipds/lookup.bm:
+	cd netipds &&   go test -run=XXX  -cpu=1 -count=10 -bench=Lpm -timeout=25m | tee lookup.bm
 
 # TODO more lookup
 
@@ -86,6 +95,9 @@ lpmtrie/size.bm:
 cidranger/size.bm:
 	cd cidranger && go test -run=XXX  -cpu=1 -count=6 -bench=Size -benchtime=1x   | tee size.bm
 
+netipds/size.bm:
+	cd netipds && go test -run=XXX  -cpu=1 -count=6 -bench=Size -benchtime=1x   | tee size.bm
+
 #
 # benchmarks for insert/delete
 #
@@ -107,3 +119,6 @@ lpmtrie/update.bm:
 
 cidranger/update.bm:
 	cd cidranger && go test -run=XXX  -cpu=1 -count=10 -bench='Insert|Delete'   | tee update.bm
+
+netipds/update.bm:
+	cd netipds && go test -run=XXX  -cpu=1 -count=10 -bench='Insert|Delete'   | tee update.bm
