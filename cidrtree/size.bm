@@ -2,12 +2,12 @@ goos: linux
 goarch: amd64
 pkg: local/iprbench/cidrtree
 cpu: AMD EPYC 7R32
-BenchmarkTier1PfxSize/100         	       1	     10800 bytes
-BenchmarkTier1PfxSize/100         	       1	     12496 bytes
-BenchmarkTier1PfxSize/100         	       1	     12496 bytes
-BenchmarkTier1PfxSize/100         	       1	     12496 bytes
-BenchmarkTier1PfxSize/100         	       1	     12496 bytes
-BenchmarkTier1PfxSize/100         	       1	     12496 bytes
+BenchmarkTier1PfxSize/100         	       1	     10904 bytes
+BenchmarkTier1PfxSize/100         	       1	     12592 bytes
+BenchmarkTier1PfxSize/100         	       1	     12592 bytes
+BenchmarkTier1PfxSize/100         	       1	     12592 bytes
+BenchmarkTier1PfxSize/100         	       1	     12592 bytes
+BenchmarkTier1PfxSize/100         	       1	     12592 bytes
 BenchmarkTier1PfxSize/1_000       	       1	     81784 bytes
 BenchmarkTier1PfxSize/1_000       	       1	     83464 bytes
 BenchmarkTier1PfxSize/1_000       	       1	     83464 bytes
@@ -32,7 +32,7 @@ BenchmarkTier1PfxSize/1_000_000   	       1	  80003464 bytes
 BenchmarkTier1PfxSize/1_000_000   	       1	  80003464 bytes
 BenchmarkTier1PfxSize/1_000_000   	       1	  80003464 bytes
 BenchmarkTier1PfxSize/1_000_000   	       1	  80003464 bytes
-BenchmarkRandomPfx4Size/100       	       1	     10184 bytes
+BenchmarkRandomPfx4Size/100       	       1	     10176 bytes
 BenchmarkRandomPfx4Size/100       	       1	     11856 bytes
 BenchmarkRandomPfx4Size/100       	       1	     11856 bytes
 BenchmarkRandomPfx4Size/100       	       1	     11856 bytes
@@ -68,24 +68,24 @@ BenchmarkRandomPfx6Size/100       	       1	     11856 bytes
 BenchmarkRandomPfx6Size/100       	       1	     11856 bytes
 BenchmarkRandomPfx6Size/100       	       1	     11856 bytes
 BenchmarkRandomPfx6Size/100       	       1	     11856 bytes
-BenchmarkRandomPfx6Size/1_000     	       1	     81784 bytes
-BenchmarkRandomPfx6Size/1_000     	       1	     83464 bytes
-BenchmarkRandomPfx6Size/1_000     	       1	     83464 bytes
-BenchmarkRandomPfx6Size/1_000     	       1	     83464 bytes
-BenchmarkRandomPfx6Size/1_000     	       1	     83464 bytes
-BenchmarkRandomPfx6Size/1_000     	       1	     83464 bytes
+BenchmarkRandomPfx6Size/1_000     	       1	     81960 bytes
+BenchmarkRandomPfx6Size/1_000     	       1	     83640 bytes
+BenchmarkRandomPfx6Size/1_000     	       1	     83640 bytes
+BenchmarkRandomPfx6Size/1_000     	       1	     83640 bytes
+BenchmarkRandomPfx6Size/1_000     	       1	     83640 bytes
+BenchmarkRandomPfx6Size/1_000     	       1	     83640 bytes
 BenchmarkRandomPfx6Size/10_000    	       1	    801784 bytes
 BenchmarkRandomPfx6Size/10_000    	       1	    803464 bytes
 BenchmarkRandomPfx6Size/10_000    	       1	    803464 bytes
 BenchmarkRandomPfx6Size/10_000    	       1	    803464 bytes
 BenchmarkRandomPfx6Size/10_000    	       1	    803464 bytes
 BenchmarkRandomPfx6Size/10_000    	       1	    803464 bytes
-BenchmarkRandomPfx6Size/100_000   	       1	   8002200 bytes
-BenchmarkRandomPfx6Size/100_000   	       1	   8003880 bytes
-BenchmarkRandomPfx6Size/100_000   	       1	   8003880 bytes
-BenchmarkRandomPfx6Size/100_000   	       1	   8003880 bytes
-BenchmarkRandomPfx6Size/100_000   	       1	   8003880 bytes
-BenchmarkRandomPfx6Size/100_000   	       1	   8003880 bytes
+BenchmarkRandomPfx6Size/100_000   	       1	   8002024 bytes
+BenchmarkRandomPfx6Size/100_000   	       1	   8003704 bytes
+BenchmarkRandomPfx6Size/100_000   	       1	   8003704 bytes
+BenchmarkRandomPfx6Size/100_000   	       1	   8003704 bytes
+BenchmarkRandomPfx6Size/100_000   	       1	   8003704 bytes
+BenchmarkRandomPfx6Size/100_000   	       1	   8003704 bytes
 BenchmarkRandomPfx6Size/1_000_000 	       1	  80001800 bytes
 BenchmarkRandomPfx6Size/1_000_000 	       1	  80003480 bytes
 BenchmarkRandomPfx6Size/1_000_000 	       1	  80003480 bytes
@@ -123,4 +123,4 @@ BenchmarkRandomPfxSize/1_000_000  	       1	  80003464 bytes
 BenchmarkRandomPfxSize/1_000_000  	       1	  80003464 bytes
 BenchmarkRandomPfxSize/1_000_000  	       1	  80003464 bytes
 PASS
-ok  	local/iprbench/cidrtree	233.986s
+ok  	local/iprbench/cidrtree	238.195s

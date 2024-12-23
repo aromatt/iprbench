@@ -7,6 +7,7 @@ import (
 	"local/iprbench/common"
 
 	"github.com/gaissmai/bart"
+	profile "github.com/pkg/profile"
 )
 
 var rt1 = new(bart.Table[any])
@@ -26,6 +27,7 @@ func init() {
 
 func BenchmarkLpmTier1Pfxs(b *testing.B) {
 
+	defer profile.Start(profile.ProfilePath(".")).Stop()
 	benchmarks := []struct {
 		name   string
 		routes []netip.Prefix

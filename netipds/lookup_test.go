@@ -7,6 +7,7 @@ import (
 	"local/iprbench/common"
 
 	"github.com/aromatt/netipds"
+	//profile "github.com/pkg/profile"
 )
 
 var rt1b = new(netipds.PrefixSetBuilder)
@@ -22,10 +23,12 @@ func init() {
 	for _, route := range randomRoutes[:100_000] {
 		rt2b.Add(route)
 	}
+
 }
 
 func BenchmarkLpmTier1Pfxs(b *testing.B) {
 
+	//defer profile.Start(profile.ProfilePath(".")).Stop()
 	benchmarks := []struct {
 		name   string
 		routes []netip.Prefix
