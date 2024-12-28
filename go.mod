@@ -4,7 +4,7 @@ go 1.22.0
 
 require (
 	github.com/Asphaltt/lpmtrie v0.0.0-20220205153150-3d814250b8ab
-	github.com/aromatt/netipds v0.1.7-0.20241222153223-b090cd8f6db1
+	github.com/aromatt/netipds v0.1.7-0.20241227065644-c03eaea48af2
 	github.com/gaissmai/bart v0.15.4
 	github.com/gaissmai/cidrtree v0.5.0
 	github.com/k-sone/critbitgo v1.4.0
