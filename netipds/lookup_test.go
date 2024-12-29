@@ -4,31 +4,30 @@ import (
 	"net/netip"
 	"testing"
 
-	"local/iprbench/common"
-
 	"github.com/aromatt/netipds"
-	//profile "github.com/pkg/profile"
+	"local/iprbench/common"
 )
 
-var rt1b = new(netipds.PrefixSetBuilder)
-var rt2b = new(netipds.PrefixSetBuilder)
+var rt1 *netipds.PrefixSet
+var rt2 *netipds.PrefixSet
 
 func init() {
+	rt1b := netipds.PrefixSetBuilder{}
 	for _, route := range tier1Routes {
 		rt1b.Add(route)
 	}
+	rt1 = rt1b.PrefixSet()
 }
 
 func init() {
+	rt2b := netipds.PrefixSetBuilder{}
 	for _, route := range randomRoutes[:100_000] {
 		rt2b.Add(route)
 	}
-
+	rt2 = rt2b.PrefixSet()
 }
 
 func BenchmarkLpmTier1Pfxs(b *testing.B) {
-
-	//defer profile.Start(profile.ProfilePath(".")).Stop()
 	benchmarks := []struct {
 		name   string
 		routes []netip.Prefix
@@ -40,7 +39,6 @@ func BenchmarkLpmTier1Pfxs(b *testing.B) {
 		{"RandomMissIP6", tier1Routes, common.MissIP6},
 	}
 
-	rt1 := rt1b.PrefixSet()
 	for _, bm := range benchmarks {
 		b.Run(bm.name, func(b *testing.B) {
 			ip := bm.fn(bm.routes)
@@ -66,7 +64,6 @@ func BenchmarkLpmRandomPfxs100_000(b *testing.B) {
 		{"RandomMissIP6", randomRoutes[:100_000], common.MissIP6},
 	}
 
-	rt2 := rt2b.PrefixSet()
 	for _, bm := range benchmarks {
 		b.Run(bm.name, func(b *testing.B) {
 			ip := bm.fn(bm.routes)

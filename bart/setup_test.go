@@ -14,6 +14,8 @@ var (
 	randomRoutes4 = common.RandomPrefixes4(1_000_000)
 	randomRoutes6 = common.RandomPrefixes6(1_000_000)
 
+	randomStrings = common.RandomStrings(1_000_000)
+
 	probe = tier1Routes[prng.Intn(len(tier1Routes))]
 	sink  any
 )

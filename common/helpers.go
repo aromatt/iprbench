@@ -246,3 +246,22 @@ func ReadFullTableShuffled(pfxFname string) []netip.Prefix {
 	})
 	return ret
 }
+
+// RandomStrings returns n random strings with lengths between 1 and 100.
+func RandomStrings(n int) []string {
+	ret := make([]string, n)
+	for i := range ret {
+		length := Prng.Intn(100) + 1
+		ret[i] = RandomString(length)
+	}
+	return ret
+}
+
+func RandomString(length int) string {
+	const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+	b := make([]byte, length)
+	for i := range b {
+		b[i] = chars[Prng.Intn(len(chars))]
+	}
+	return string(b)
+}
