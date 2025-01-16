@@ -1,7 +1,7 @@
 github.com/Asphaltt/lpmtrie v0.0.0-20220205153150-3d814250b8ab h1:hzN25CB5VzeKk3/c1fi1oT03N+5365nVOMPAxixkADY=
 github.com/Asphaltt/lpmtrie v0.0.0-20220205153150-3d814250b8ab/go.mod h1:TdNTLzn3VVXKfmHAULK5gY+h/A1gLQ8NnwLB6cSN54g=
-github.com/aromatt/netipds v0.1.7 h1:upnrjt3/vtiQQLhVTE+wJQOwoNPqQRAaHMohvWWf6bc=
-github.com/aromatt/netipds v0.1.7/go.mod h1:TVWwAV/IghERh+218SzJz1DfixOswt5/BhiOAUs99Hc=
+github.com/aromatt/netipds v0.1.8-0.20250115232559-1950a04ac661 h1:69CZyiF/TcxRRJ8MNSm59thxBgyL1XC837SUhT+I3JY=
+github.com/aromatt/netipds v0.1.8-0.20250115232559-1950a04ac661/go.mod h1:TVWwAV/IghERh+218SzJz1DfixOswt5/BhiOAUs99Hc=
 github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/gaissmai/bart v0.17.5 h1:JTuuHqgcQmfICtM45eJyNP5l2lt2lBrv+sbqysI8BLU=
